@@ -246,7 +246,7 @@ button.btn.btn-custom:hover {
 }
 
 .section.section-bgtype-image {
-    background-color: #222;
+   /*  background-color: #222; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -258,14 +258,14 @@ button.btn.btn-custom:hover {
 
 .section.section-bgtype-image > .section-inner > .bg-overlay {
     content: '';
-    position: absolute;
+    /* position: absolute; */
     background-color: #000;
     left: 0px;
     right: 0px;
     bottom: 0px;
     top: 0px;
     zoom: 1;
-    opacity: 0.8;
+    opacity: 0.5;
     filter: alpha(opacity=80);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=80)";
 }
@@ -474,7 +474,8 @@ button.btn.btn-custom:hover {
 /* ##### CHARTS SECTION ##### */
 
 #rj-charts {
-    background-image: url("../img/bg-charts.jpg");
+    background-image: url("../img/testimonial.png");
+	height: 50%;
 }
 
 
@@ -792,4 +793,10 @@ footer.footer #rj-copyright p {
     footer.footer #rj-copyright p {
         text-align: left;
     }
+}
+
+video {  
+   width:100%; 
+   max-width:500px; 
+   height:auto; 
 }
