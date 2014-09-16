@@ -5,8 +5,8 @@
 }
 
 .funny-box:hover > .funny-box-icon {
-    background-color: #3996cc;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.30);
+    color: #faaaaa;
 }
 
 .funny-box > .funny-box-icon {
@@ -16,9 +16,9 @@
     width: 75px;
     height: 75px;
     line-height: 90px;
-    border: 1px solid #3996cc;
+    border: 1px solid #faaaaa;
     border-radius: 50%;
-    color: #3996cc;
+    color: #faaaaa;
 }
 
 .funny-box > .funny-box-icon > i {
@@ -36,7 +36,7 @@
 .funny-box > .funny-box-text > h4:after {
     margin-left: -30px;
     left: 50%;
-    background-color: #3996cc;
+    background-color: #faaaaa;
     width: 60px;
     height: 1px;
     content: "";

@@ -15,7 +15,7 @@ html {
 body {
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
-    color: #222222;
+    color: #faaaaa;
     overflow-x: hidden;
 }
 
@@ -59,16 +59,16 @@ p {
 
 a.btn.btn-custom,
 button.btn.btn-custom {
-    background-color: #3996cc;
-    color: #fff;
-    border-color: #4da1d1;
+    background-color: rgba(255, 255, 255, 0.20);
+    color: #faaaaa;
+    border-color: rgba(255, 255, 255, 0.30);
     text-transform: uppercase;
 }
 
 a.btn.btn-custom:hover,
 button.btn.btn-custom:hover {
     color: #fff;
-    background-color: #3088bb;
+    background-color: rgba(255, 255, 255, 0.34);
 }
 
 .delayp1 {
@@ -193,7 +193,7 @@ button.btn.btn-custom:hover {
 }
 
 .section > .section-inner > .section-content .section-title {
-    color: #222;
+    color: #faaaaa;
     text-transform: uppercase;
     padding-bottom: 40px;
 }
@@ -233,7 +233,7 @@ button.btn.btn-custom:hover {
 }
 
 @media (min-width: 479px) {
-    .section > .section-inner > .section-content .section-title > .sub-title {
+    .section > .section-inner > .section-content .sectiontle > .sub-title {
         font-size: 25px;
     }
 }
@@ -307,7 +307,7 @@ button.btn.btn-custom:hover {
 #rj-intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: inherit;
     color: #fff;
     background: rgba(0, 0, 0, 0.9);
 }
@@ -487,11 +487,11 @@ button.btn.btn-custom:hover {
 #rj-quote > .section-inner > .section-content {
     padding-top: 100px;
     padding-bottom: 80px;
-    color: #b7ada4;
+    color: #faaaaa;
 }
 
 #rj-quote > .section-inner > .section-content .quote-text > .quote-icon > i {
-    color: #3996cc;
+    color: #faaaaa;
     padding-bottom: 20px;
 }
 
@@ -500,7 +500,7 @@ button.btn.btn-custom:hover {
 }
 
 #rj-quote > .section-inner > .section-content .quote-text > h2.quote-by {
-    color: #3996cc;
+    color: #faaaaa;
 }
 
 
@@ -595,8 +595,9 @@ button.btn.btn-custom:hover {
 /* ##### CONTACT US SECTION ##### */
 
 #rj-contact-us {
-    background-image: url("../img/bg-contact-us.jpg");
-    background-position: bottom center;
+    background-color: #fff;
+    background-image: url("../img/bg-noise.png");
+    background-repeat: repeat;
 }
 
 #rj-contact-us .form-group label {
@@ -609,12 +610,12 @@ button.btn.btn-custom:hover {
 
 #rj-contact-us .form-group input,
 #rj-contact-us .form-group textarea {
-    color: #222;
+    color: #faaaaa;
+	background-color: rgba(255, 255, 255, 0.10);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     border-radius: 0px;
-    border-left-color: #3996cc;
 }
 
 #rj-contact-us .form-group textarea {
@@ -628,10 +629,10 @@ button.btn.btn-custom:hover {
 }
 
 #rj-contact-us .form-group span {
+background-color: rgba(255, 255, 255, 0.20);
     color: #fff;
-    background-color: #3996cc;
     border-radius: 0px;
-    border-color: #3996cc;
+    border-color: border-color: rgba(255, 255, 255, 0.30);
 }
 
 #rj-contact-us .form-group span > i {
@@ -654,7 +655,7 @@ button.btn.btn-custom:hover {
 }
 
 #rj-contact-us .social-icon-text > h4 {
-    color: #b7ada4;
+    color: #faaaaaa;
     font-size: 30px;
     font-weight: 300;
     letter-spacing: 0.1em;
