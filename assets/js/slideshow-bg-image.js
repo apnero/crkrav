@@ -3,7 +3,7 @@ $(function(){
     // jQuery backstretch
     if (jQuery.browser.mobile === false) 
     {
-        $('#rj-intro').backstretch([
+/*         $('#rj-intro').backstretch([
 		"assets/img/intro/1.jpg"
         ,  "assets/img/intro/2.jpg"
         , 	"assets/img/intro/3.jpg"
@@ -15,16 +15,16 @@ $(function(){
         $('#rj-charts').backstretch([
 		"assets/img/doug.png"
         ,  "assets/img/katly.png"
-        ], {duration: 3500, fade: 3500});
+        ], {duration: 3500, fade: 3500}); */
 
 		
 		
-		$('#rj-charts2').backstretch([
-		"assets/img/main1.png"
-        ,  "assets/img/main1.png"
-        ], {duration: 3500, fade: 3500});
+		// $('#rj-charts2').backstretch([
+		// "assets/img/main1.png"
+        // ,  "assets/img/main1.png"
+        // ], {duration: 3500, fade: 3500});
 
-		}
+	}
 		
 		
 });

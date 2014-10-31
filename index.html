@@ -28,17 +28,18 @@
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
     <link href="assets/css/sidebar.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/features/counters.css" rel="stylesheet" type="text/css">
+    <!-- <link href="assets/css/bigvideo.css" rel="stylesheet" type="text/css"> -->
+	<link href="assets/css/features/counters.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/content-boxes.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/funny-boxes.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/charts.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/portfolio.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/meet-the-team.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/testimonials.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/features/pricing-tables.css" rel="stylesheet" type="text/css">
+<!--     <link href="assets/css/features/pricing-tables.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/countdown.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/features/timeline.css" rel="stylesheet" type="text/css">
-    
+    <link href="assets/css/features/timeline.css" rel="stylesheet" type="text/css"> -->
+     <link href="assets/css/video-js.css" rel="stylesheet" type="text/css">
     <!-- Modernizr JS -->
     <script src="assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     
@@ -61,6 +62,15 @@
         <!--//.preload -->
     </div>
     <!--//END PAGE LOADER -->
+	
+	    <!-- BEGIN PAGE LOADER -->
+    <div id="rj-loader2">
+        <div class="preload">
+            <a id="enter"><img src="assets/img/enter.png" alt="Loading"/></a>
+        </div>
+        <!--//.preload -->
+    </div>
+    <!--//END PAGE LOADER -->
     
   
         <!-- BEGIN NAVBAR / NAVIGATION -->
@@ -74,20 +84,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">Cannon Ridge</a>
+                <a id="cr_item" class="navbar-brand" href="#page-top">Cannon Ridge</a>
             </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-rj-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="#schedule">Schedule</a>
+                        <a id="sch_item" href="#schedule">Schedule</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#tweets">Tweets</a>
+                        <a id="tweets_item" href="#tweets">Tweets</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact Us</a>
+                        <a id="contact_item" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -100,14 +110,23 @@
   
         <!-- BEGIN QUOTE SECTION -->
     <section id="rj-charts2" class="section section-bgtype-image">
-        
+        						<div class="video">
+							<video id="video_1" height="100%" width="100%" class="video-js vjs-default-skin"
+								  autoplay loop preload="all" 
+								poster="assets/img/face.png">
+							<source src="assets/img/face.mp4" type='video/mp4' />
+							<source src="assets/img/face.ogv" type='video/ogg' />
+							<source src="assets/img/face.webm" type='video/webm' />
+							</video>
+
+							
+						</div>        
         <div class="section-inner">
             
-            <div class="bg-overlay"></div>
-            
-            <div class="container section-content">
-
-            </div>
+           
+    
+          <!--   <div class="container section-content">
+            </div> -->
             <!-- //.section-content -->
         </div>
         <!-- //.section-inner -->
@@ -116,7 +135,7 @@
 	
 	
     <!-- BEGIN WHO WE ARE SECTION -->
-    <section id="rj-who-we-are" class="section">
+    <section id="rj-who-we-are" class="section hide">
             
         <div class="section-inner">
             
@@ -166,7 +185,7 @@
     
     
         <!-- BEGIN INTRO SECTION -->
-    <section id="rj-intro">
+    <section id="rj-intro" class="hide">
         
         <div class="intro-body text-center">
             
@@ -186,7 +205,7 @@
     
 	
 	  <!-- BEGIN FUNNY BOXES SECTION -->
-    <section id="rj-funny-boxes" class="section">
+    <section id="rj-funny-boxes" class="section hide">
         
         <div id="schedule" class="section-inner">
             
@@ -207,7 +226,7 @@
    
     
     <!-- BEGIN FUNNY BOXES SECTION -->
-    <section id="rj-funny-boxes" class="section">
+    <section id="rj-funny-boxes2" class="section hide">
         
         <div class="section-inner">
             
@@ -268,7 +287,7 @@
    
 		
     <!-- BEGIN QUOTE SECTION -->
-    <section id="rj-quote" class="section section-bgtype-image">
+    <section id="rj-quote" class="section section-bgtype-image hide">
         
         <div class="section-inner">
             
@@ -296,7 +315,7 @@
 
       
     <!-- BEGIN QUOTE SECTION -->
-    <section id="rj-charts" class="section section-bgtype-image">
+    <section id="rj-charts" class="section section-bgtype-image hide">
         
         <div class="section-inner">
             
@@ -313,7 +332,7 @@
 	
 	
 	<!-- BEGIN FUNNY BOXES SECTION -->
-    <section id="rj-funny-boxes" class="section">
+    <section id="rj-funny-boxes3" class="section hide">
         
         <div id="tweets" class="section-inner">
             
@@ -346,7 +365,7 @@
     
 	
 	  <!-- BEGIN FUNNY BOXES SECTION -->
-    <section id="rj-funny-boxes" class="section">
+    <section id="rj-funny-boxes4" class="section hide">
         
         <div class="section-inner">
             
@@ -363,7 +382,7 @@
 	
 
        <!-- BEGIN QUOTE SECTION -->
-    <section id="rj-counters" class="section section-bgtype-image">
+    <section id="rj-counters" class="section section-bgtype-image hide">
         
         <div class="section-inner">
             
@@ -381,7 +400,7 @@
 	
     
     <!-- BEGIN CONTACT US SECTION -->
-    <section id="rj-contact-us" class="section">
+    <section id="rj-contact-us" class="section hide">
         
         <div id="contact" class="section-inner">
             
@@ -464,8 +483,8 @@
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                 <li class="hidden-xs"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             </ul>
                         </div>
                         <!-- //.social-icon-text -->
@@ -485,7 +504,7 @@
     <footer class="footer">
         
         <!-- BEGIN FOOTER SECTION -->
-        <section id="rj-footer">
+        <section id="rj-footer" class="hide">
             
             <div class="container">    
                 <div class="row">
@@ -529,7 +548,7 @@
         <!--//END FOOTER SECTION -->
         
         <!-- BEGIN COPYRIGHT -->
-        <div id="rj-copyright">
+        <div id="rj-copyright" class="hide">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -554,10 +573,10 @@
     <script src="assets/plugins/jquery-backstretch/jquery.backstretch.min.js"></script>
     <script src="assets/plugins/jquery.sticky.js"></script>
     <script src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
-    <script src="assets/plugins/jquery.countTo.js"></script>
+<!--     <script src="assets/plugins/jquery.countTo.js"></script>
     <script src="assets/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
-    <script src="assets/plugins/jquery-countdown/jquery.countdown.min.js"></script>
-
+    <script src="assets/plugins/jquery-countdown/jquery.countdown.min.js"></script> -->
+	<script src="assets/js/video.js"></script> 
     <!-- Custom Theme JS -->
     <script src="assets/js/rinjani.js"></script>
     <script src="assets/js/slideshow-bg-image.js"></script>
@@ -569,9 +588,9 @@
     <script src="assets/js/features/portfolio.js"></script>
     <script src="assets/js/features/meet-the-team.js"></script>
     <script src="assets/js/features/testimonials.js"></script>
-    <script src="assets/js/features/pricing-tables.js"></script>
+<!--     <script src="assets/js/features/pricing-tables.js"></script>
     <script src="assets/js/features/countdown.js"></script>
-    <script src="assets/js/features/timeline.js"></script>
+    <script src="assets/js/features/timeline.js"></script> -->
 	<script type="text/javascript" src="assets/plugins/wow.min.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript">
@@ -640,7 +659,73 @@
 
 		});
     </script>
-	
+
+     <script type="text/javascript">
+        
+ 
+		function start(){
+			$('#rj-loader2').hide();
+			var myPlayer = videojs("video_1");
+				
+					$('#video_1').hide();
+					$('#rj-charts2').backstretch([
+							"assets/img/main1.png"
+							,  "assets/img/main1.png"
+						], {duration: 13500, fade: 100});
+						
+					$('#rj-intro').backstretch([
+					"assets/img/intro/1.jpg"
+					,  "assets/img/intro/2.jpg"
+					, 	"assets/img/intro/3.jpg"
+					,   "assets/img/intro/4.jpg"
+					,	"assets/img/intro/5.jpg"
+					], {duration: 2500, fade: 3000});
+
+
+					$('#rj-charts').backstretch([
+					"assets/img/doug.png"
+					,  "assets/img/katly.png"
+					], {duration: 3500, fade: 3500});
+						
+						
+					$('#video_1_html5_api').css({
+					'position' : 'absolute',
+					'left' : '-15%',
+					'top' : '25%',
+					'height' : '75%',
+					'width' : '75%'
+					});
+			
+					myPlayer.src([
+					  { type: "video/mp4", src: "assets/img/woman.mp4" },
+					  { type: "video/webm", src: "assets/img/woman.webm" },
+					  { type: "video/ogg", src: "assets/img/woman.ogv" }
+					]);
+
+					$('#video_1').show();
+					myPlayer.play();
+					$('#rj-who-we-are').removeClass('hide');
+					$('#rj-intro').removeClass('hide');
+					$('#rj-funny-boxes').removeClass('hide');
+					$('#rj-funny-boxes2').removeClass('hide');
+					$('#rj-funny-boxes3').removeClass('hide');
+					$('#rj-funny-boxes4').removeClass('hide');
+					$('#rj-quote').removeClass('hide');
+					$('#rj-charts').removeClass('hide');
+					$('#rj-footer').removeClass('hide');
+					$('#rj-copyright').removeClass('hide');
+					$('#rj-counters').removeClass('hide');
+					$('#rj-contact-us').removeClass('hide');
+			
+		};       
+		
+		       $('#enter').click(start);
+			   $('#cr_item').click(start);
+			   $('#tweets_item').click(start);
+			   $('#sch_item').click(start);
+			   $('#contact_item').click(start);
+     </script>
+
 
 </body>
 

@@ -301,6 +301,25 @@ button.btn.btn-custom:hover {
     margin-left: -64px;
 }
 
+#rj-loader2 {
+    position: fixed;
+    left: 45%;
+    top: 85%;
+    width: 20%;
+    height: 20%;
+    z-index: 9999;
+    #background-color: #fff;
+}
+
+#rj-loader2 .preload {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -64px;
+    margin-left: -64px;
+}
 
 /* ##### INTRO SECTION ##### */
 
@@ -468,7 +487,7 @@ button.btn.btn-custom:hover {
 #rj-counters {
     background-image: url("../img/testimonial.png");
     #background-position: bottom center;
-	height: 70%;
+	height: 80%;
 }
 
 
@@ -477,34 +496,15 @@ button.btn.btn-custom:hover {
 #rj-charts {
     #background-color: #000000;
 	#background-image: url("../img/doug.png");
-	height: 70%;
+	height: 80%;
 }
 
 /* ##### CHARTS SECTION ##### */
 
 #rj-charts2{
-	height: 90%;
+	#background-image: url("../img/bg-noise.png");
+	height: 100%;
 }
-
-@media (min-width: 400px) {
-    #rj-charts2 {
-        height: 30%;
-    }
-}
-
-@media (min-width: 767px) {
-    #rj-charts2 {
-        height: 60%;
-    }
-}
-
-@media (min-width: 1200px) {
-    #rj-charts2 {
-        height: 90%;
-    }
-}
-
-
 
 
 
@@ -828,8 +828,8 @@ footer.footer #rj-copyright p {
 }
 
 video {  
-   width:100%; 
-   max-width:500px; 
-   height:auto; 
+   #width:100%; 
+   #max-width:500px; 
+   #height:100%; 
 }
 
