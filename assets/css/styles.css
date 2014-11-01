@@ -247,7 +247,7 @@ button.btn.btn-custom:hover {
 
 .section.section-bgtype-image {
    /*  background-color: #222; */
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: cover;
@@ -540,7 +540,7 @@ button.btn.btn-custom:hover {
 /* ##### KEEP IN TOUCH SECTION ##### */
 
 #rj-keep-in-touch {
-    background-image: url("../img/bg-keep-in-touch.jpg");
+    background-image: url("../img/testimonial.png");
 }
 
 #rj-keep-in-touch .social-icon-item:hover {
