@@ -452,6 +452,11 @@ button.btn.btn-custom:hover {
     padding-bottom: 40px;
 }
 
+#rj-who-we-are h2 {
+	font-family: 'PT Serif', serif;
+
+}
+
 @media (min-width: 1023px) {
     #rj-who-we-are .carousel-container {
         padding-bottom: 0px;

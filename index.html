@@ -36,12 +36,14 @@
     <link href="assets/css/features/portfolio.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/meet-the-team.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/testimonials.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Serif:700' rel='stylesheet' type='text/css'>
 <!--     <link href="assets/css/features/pricing-tables.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/countdown.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/timeline.css" rel="stylesheet" type="text/css"> -->
      <link href="assets/css/video-js.css" rel="stylesheet" type="text/css">
     <!-- Modernizr JS -->
     <script src="assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	
     
     <meta name="google-site-verification" content="OdAe3ml6M7BkLV9jZ6MceK0cu_97cocAtjc4E2kCTd8"/>
 </head>
@@ -73,7 +75,13 @@
     <!--//END PAGE LOADER -->
     
   
-        <!-- BEGIN NAVBAR / NAVIGATION -->
+    <audio autoplay loop preload>
+  <source src="assets/img/kravmusic.mp3" type="audio/mpeg">
+  <source src="assets/img/.ogg" type="audio/ogg">
+  Your browser does not support the audio tag.
+	</audio>
+
+    <!-- BEGIN NAVBAR / NAVIGATION -->
     <nav id="navigation" class="navbar rj-navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Navbar Header-->
@@ -113,8 +121,8 @@
         						<div class="video">
 							<video id="video_1" height="100%" width="100%" class="video-js vjs-default-skin"
 								  autoplay loop preload="all" 
-								poster="assets/img/face.png">
-							<source src="assets/img/face.mp4" type='video/mp4' />
+								>
+							<source src="assets/img/intro.mp4" type='video/mp4' />
 							<source src="assets/img/face.ogv" type='video/ogg' />
 							<source src="assets/img/face.webm" type='video/webm' />
 							</video>
@@ -727,6 +735,8 @@
 	google.maps.event.addDomListener(window, 'load', initialize_map);
 	
 
+	
+	
 		});
     </script>
 
@@ -767,7 +777,7 @@
 //					});
 			
 					myPlayer.src([
-					  { type: "video/mp4", src: "assets/img/test.mp4" },
+					  { type: "video/mp4", src: "assets/img/slider.mp4" },
 					  { type: "video/webm", src: "assets/img/test.webm" },
 					  { type: "video/ogg", src: "assets/img/test.ogv" }
 					]);
@@ -793,6 +803,7 @@
 					google.maps.event.trigger(map, "resize");
 					map.setCenter(center);
 
+					
 			
 		};       
 		
@@ -801,6 +812,9 @@
 			   $('#tweets_item').click(start);
 			   $('#sch_item').click(start);
 			   $('#contact_item').click(start);
+			   
+			   
+			   
 			   
 
      </script>
