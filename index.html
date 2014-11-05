@@ -118,17 +118,19 @@
   
         <!-- BEGIN QUOTE SECTION -->
     <section id="rj-charts2" class="section section-bgtype-image">
-        						<div class="video">
-							<video id="video_1" height="100%" width="100%" class="video-js vjs-default-skin"
-								  autoplay loop preload="all" 
-								>
-							<source src="assets/img/intro.mp4" type='video/mp4' />
-							<source src="assets/img/intro.ogv" type='video/ogg' />
-							<source src="assets/img/intro.webm" type='video/webm' />
-							</video>
-
-							
-						</div>        
+			<div class="video">
+					<video id="video_1" height="100%" width="100%" class="video-js vjs-default-skin" autoplay loop preload="all">
+						<source src="assets/img/intro.mp4" type='video/mp4' />
+						<source src="assets/img/intro.ogv" type='video/ogg' />
+						<source src="assets/img/intro.webm" type='video/webm' />
+					</video>			
+			</div>   
+			<div class="slider"
+				<img src="assets/img/main1.png" alt="main"/>
+			</div>
+			<div class="slider"
+				<img src="assets/img/ma.png" alt="main"/>
+			</div>
         <div class="section-inner">
             
            
@@ -803,17 +805,33 @@
 					google.maps.event.trigger(map, "resize");
 					map.setCenter(center);
 
+
+					
+					$('#rj-charts2').backstretch([
+					"assets/img/slider1.png"
+					,  "assets/img/slider2.png"
+					], {duration: 17000, fade: 3000});
+					
+					tick();
 					
 			
 		};       
 		
-		       $('#enter').click(start);
-			   $('#cr_item').click(start);
-			   $('#tweets_item').click(start);
-			   $('#sch_item').click(start);
-			   $('#contact_item').click(start);
+	   $('#enter').click(start);
+	   $('#cr_item').click(start);
+	   $('#tweets_item').click(start);
+	   $('#sch_item').click(start);
+	   $('#contact_item').click(start);
 			   
-			   
+	   function tick() {
+			$('#video_1').delay(5000).fadeTo(5000, .1, function () {
+				$('#video_1').delay(5000).fadeTo(5000,1);
+				tick();
+			});
+		};
+
+
+
 			   
 			   
 
