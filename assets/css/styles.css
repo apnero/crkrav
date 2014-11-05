@@ -453,7 +453,7 @@ button.btn.btn-custom:hover {
 }
 
 #rj-who-we-are h2 {
-	font-family: 'PT Serif', serif;
+	font-family: 'Hammersmith One', sans-serif;
 
 }
 
@@ -499,8 +499,8 @@ button.btn.btn-custom:hover {
 /* ##### CHARTS SECTION ##### */
 
 #rj-charts {
-    #background-color: #000000;
-	#background-image: url("../img/doug.png");
+    background-color: #000000;
+	background-image: url("../img/bg-noise.png");
 	height: 80%;
 }
 
