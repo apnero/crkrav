@@ -511,6 +511,12 @@ button.btn.btn-custom:hover {
 	height: 100%;
 }
 
+#rj-charts3{
+	#background-image: url("../img/bg-noise.png");
+	#height: 75%;
+}
+
+
 
 
 
