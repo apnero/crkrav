@@ -42,8 +42,10 @@
     <link href="assets/css/features/countdown.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/timeline.css" rel="stylesheet" type="text/css"> -->
      <link href="assets/css/video-js.css" rel="stylesheet" type="text/css">
+	 <link href="assets/css/videojs.watermark.css" rel="stylesheet">
     <!-- Modernizr JS -->
     <script src="assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	
 	
     
     <meta name="google-site-verification" content="OdAe3ml6M7BkLV9jZ6MceK0cu_97cocAtjc4E2kCTd8"/>
@@ -123,6 +125,7 @@
         <!-- BEGIN QUOTE SECTION -->
     <section id="rj-charts2" class="section section-bgtype-image">
 			<div class="video">
+				
 					<video id="video_1" height="100%" width="100%" class="video-js vjs-default-skin" autoplay loop preload="all">
 						<source src="assets/img/intro.mp4" type='video/mp4' />
 						<source src="assets/img/intro.ogv" type='video/ogg' />
@@ -692,12 +695,15 @@
     <script src="assets/js/features/countdown.js"></script>
     <script src="assets/js/features/timeline.js"></script> -->
 	<script type="text/javascript" src="assets/plugins/wow.min.js"></script>
+	<script type="text/javascript" src="assets/js/videojs.watermark.js"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript">
 	var map;
 	    jQuery(document).ready(function() {
  
-			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+
+					!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 		
 	
 
@@ -768,16 +774,12 @@
 
      <script type="text/javascript">
         
+
  
 		function start(){
 			$('#rj-loader2').hide();
 			var myPlayer = videojs("video_1");
 				
-//					$('#video_1').hide();
-//					$('#rj-charts2').backstretch([
-//							"assets/img/main1.png"
-//							,  "assets/img/main1.png"
-//						], {duration: 13500, fade: 100});
 						
 					$('#rj-intro').backstretch([
 					"assets/img/intro/1.jpg"
@@ -788,19 +790,6 @@
 					], {duration: 2500, fade: 3000});
 
 
-					$('#rj-charts').backstretch([
-					"assets/img/doug.png"
-					,  "assets/img/katly.png"
-					], {duration: 9000, fade: 3000});
-						
-						
-	//				$('#video_1_html5_api').css({
-	//				'position' : 'absolute',
-//					'left' : '-10%',
-	//				'top' : '35%',
-	//				'height' : '65%',
-	//				'width' : '65%'
-//					});
 			
 					myPlayer.src([
 					  { type: "video/mp4", src: "assets/img/slider.mp4" },
@@ -810,6 +799,7 @@
 
 //					$('#video_1').show();
 					myPlayer.play();
+					$('img.vjs-watermark').addClass('hide');
 					$('#rj-who-we-are').removeClass('hide');
 					$('#rj-intro').removeClass('hide');
 					$('#rj-funny-boxes').removeClass('hide');
@@ -833,9 +823,9 @@
 
 					
 //					$('#rj-charts2').backstretch([
-	//				"assets/img/slider1.png"
-		//			,  "assets/img/slider2.png"
-			//		], {duration: 17000, fade: 3000});
+//					"assets/img/slider1.png"
+//					,  "assets/img/slider2.png"
+//					], {duration: 17000, fade: 3000});
 					
 					//tick();
 					
@@ -855,12 +845,43 @@
 			});
 		};
 
-
+//tick();
 
 			   
 			   
 
      </script>
+	 
+	 <script>
+      var randomImage = {
+        paths: [
+          "assets/img/camoA.png",
+          "assets/img/camoB.png",
+          "assets/img/camoC.png",
+		  "assets/img/camoD.png",
+		  "assets/img/camoE.png",
+		  "assets/img/camoF.png",
+		  "assets/img/camoG.png",
+        ],
+        generate: function(){
+          var path = randomImage.paths[Math.floor(Math.random()*randomImage.paths.length)];
+		  
+			var my_video_id = videojs('video_1');
+
+			my_video_id.watermark({
+			  file: path,
+			  xpos: 0,
+			  ypos: 0,
+			  xrepeat: 0,
+			  opacity: 1
+			  });
+
+        }
+      }
+      randomImage.generate();
+	</script>
+
+
 
 
 </body>
