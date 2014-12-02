@@ -512,7 +512,9 @@ button.btn.btn-custom:hover {
 }
 
 #rj-charts3{
-	#background-image: url("../img/bg-noise.png");
+	    background-color: #fff;
+    background-image: url("../img/bg-noise.png");
+    background-repeat: repeat;
 	#height: 75%;
 }
 
