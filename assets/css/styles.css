@@ -507,6 +507,7 @@ button.btn.btn-custom:hover {
 /* ##### CHARTS SECTION ##### */
 
 #rj-charts2{
+background-color: #000000;
 	#background-image: url("../img/bg-noise.png");
 	height: 100%;
 }
