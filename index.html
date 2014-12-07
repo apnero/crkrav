@@ -78,7 +78,7 @@
     <!--//END PAGE LOADER -->
     
   
-    <audio id="audio_player" autoplay loop preload>
+    <audio id="audio_player" loop preload>
   <source id="mp3_src" src="assets/img/kravintro.mp3" type="audio/mpeg">
  <!--  <source src="assets/img/.ogg" type="audio/ogg"> -->
   Your browser does not support the audio tag.
@@ -384,7 +384,7 @@
              <!-- BEGIN QUOTE SECTION -->
     <section id="rj-charts3" class="section section-bgtype-image hide">
 			<div class="video">
-					<video id="video_2" height="100%" width="100%" class="video-js vjs-default-skin" autoplay loop preload="all">
+					<video id="video_2" height="100%" width="100%" class="video-js vjs-default-skin" loop preload="none">
 						<source src="assets/img/testimonial.mp4" type='video/mp4' />
 			
 					</video>			
@@ -699,6 +699,7 @@
 	<script type="text/javascript">
 	 var audio = $("#audio_player");
 		audio[0].volume = .2;
+		audio[0].play();
 		
 	var map;
 	    jQuery(document).ready(function() {
@@ -781,6 +782,7 @@
 		function start(){
 			$('#rj-loader2').hide();
 			var myPlayer = videojs("video_1");
+			var testimonialPlayer = videojs("video_2");
 			var audio = $("#audio_player");
 			$("#mp3_src").attr("src", "assets/img/KravMusic.mp3");
 				
@@ -801,9 +803,11 @@
 					  { type: "video/mp4", src: "assets/img/slider.mp4" }
 					]);
 
-					$('#video_1').css( "opacity", "0" );
-					$('#video_1').delay(1000).fadeTo(5000,1, "linear");
 					myPlayer.play();
+					$('#video_1').css( "opacity", "0" );
+					$('#video_1').delay(800).fadeTo(4000,1, "linear");
+					
+					testimonialPlayer.play();
 					//$('img.vjs-watermark').addClass('hide');
 					$('#rj-who-we-are').removeClass('hide');
 					$('#rj-intro').removeClass('hide');
