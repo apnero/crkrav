@@ -339,7 +339,7 @@ button.btn.btn-custom:hover {
 
 @media (min-width: 1279px) {
     #rj-intro {
-        height: 72%;
+        height: 100%;
         padding: 0px;
     }
 }
@@ -347,7 +347,7 @@ button.btn.btn-custom:hover {
 #rj-intro .intro-body {
     position: relative;
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
     padding: 35px 0px;
 }
 
@@ -845,5 +845,19 @@ video {
    #width:100%; 
    #max-width:500px; 
    #height:100%; 
+}
+
+#chris1text.lead{
+text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
+
+}
+
+#chris2text.lead{
+text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
+
+}
+#chris3text.lead{
+text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
+
 }
 

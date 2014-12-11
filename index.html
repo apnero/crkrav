@@ -42,7 +42,7 @@
     <link href="assets/css/features/countdown.css" rel="stylesheet" type="text/css">
     <link href="assets/css/features/timeline.css" rel="stylesheet" type="text/css"> -->
      <link href="assets/css/video-js.css" rel="stylesheet" type="text/css">
-	 <link href="assets/css/videojs.watermark.css" rel="stylesheet">
+<!-- 	 <link href="assets/css/videojs.watermark.css" rel="stylesheet"> -->
     <!-- Modernizr JS -->
     <script src="assets/plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 	
@@ -195,13 +195,29 @@
     
     
     
-        <!-- BEGIN INTRO SECTION -->
-    <section id="rj-intro" class="hide">
+    <!-- BEGIN INTRO SECTION -->
+    <!-- BEGIN INTRO SECTION -->
+    <section id="rj-intro" class="section hide">
         
         <div class="intro-body text-center">
             
             <div class="container intro-content">
+                <div class="row">
+                    <div id="christext" class="col-md-6">
+ 
+                        
+                        <div class="intro-text text-center">
+                           
+                            
+                            <p id="chris1text" class="lead">
+							</p>
 
+                        </div>
+                        
+
+                        <!-- //.page-scroll -->
+                    </div>
+                </div>
                 <!-- //.row -->
             </div>
             <!-- //.container -->
@@ -694,7 +710,7 @@
     <script src="assets/js/features/countdown.js"></script>
     <script src="assets/js/features/timeline.js"></script> -->
 	<script type="text/javascript" src="assets/plugins/wow.min.js"></script>
-	<script type="text/javascript" src="assets/js/videojs.watermark.js"></script>
+<!-- 	<script type="text/javascript" src="assets/js/videojs.watermark.js"></script> -->
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 	<script type="text/javascript">
 	 var audio = $("#audio_player");
@@ -787,13 +803,11 @@
 			$("#mp3_src").attr("src", "assets/img/KravMusic.mp3");
 				
 						
-					$('#rj-intro').backstretch([
-					"assets/img/intro/1.jpg"
-					,  "assets/img/intro/2.jpg"
-					, 	"assets/img/intro/3.jpg"
-					,   "assets/img/intro/4.jpg"
-					,	"assets/img/intro/5.jpg"
-					], {duration: 2500, fade: 3000});
+		//			$('#rj-intro').backstretch([
+		//			"assets/img/intro/chris1.jpg"
+		//			,  "assets/img/intro/chris2.jpg"
+		//			, 	"assets/img/intro/chris3.jpg"
+		//			], {duration: 5000, fade: 3000});
 
 					audio[0].pause();
 					audio[0].load();//suspends and restores all audio element
@@ -830,13 +844,26 @@
 					map.setCenter(center);
 
 
-					
+				var items = [
+				  { img: "assets/img/intro/chris1.jpg", caption: "From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations."},
+				  { img: "assets/img/intro/chris2.jpg", caption: "In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel the globe and has provided his services to clients all over the world."},
+				  { img: "assets/img/intro/chris3.jpg", caption: "Adding to his credentials, Chris was certified through the Israeli Krav Maga Association (Gidon System) as well as Nir Maman’s CT707 Israeli Special Forces Krav Maga. In 2012 he opened Cannon Ridge Training Center to begin teaching Israeli Krav Maga to men in women in CT."}
+				];
+
+				var images = $.map(items, function(i) { return i.img; });
+
+				$('#rj-intro').backstretch(images,{duration: 10000, fade: 100});
+
+				$(window).on("backstretch.show", function(e, instance) {
+				  var newCaption = items[instance.index].caption;
+				  $("#chris1text").text( newCaption );
+				});
 //					$('#rj-charts2').backstretch([
 //					"assets/img/slider1.png"
 //					,  "assets/img/slider2.png"
 //					], {duration: 17000, fade: 3000});
 					
-					//tick();
+	//				tick();
 					
 			
 		};       
@@ -847,14 +874,24 @@
 	   $('#sch_item').click(start);
 	   $('#contact_item').click(start);
 			   
-	   function tick() {
-			$('#video_1').delay(5000).fadeTo(5000, .1, function () {
-				$('#video_1').delay(5000).fadeTo(5000,1);
-				tick();
+/*	   function tick() {
+			
+			$('#chris1text').removeClass('hide').delay(7000).fadeOut(2000, function () {
+				$('#chris1text').addClass('hide')
+				$('#chris1text').css( "opacity", "1" )
+				$('#chris2text').removeClass('hide').delay(7000).fadeOut(2000, function () {		
+					$('#chris2text').addClass('hide')
+					$('#chris2text').css( "opacity", "1" )
+					$('#chris3text').removeClass('hide').delay(7000).fadeOut(2000, function () {	
+						$('#chris3text').addClass('hide')
+						$('#chris3text').css( "opacity", "1" )
+						tick();
+					});
+				});
 			});
-		};
+		};*/
 
-//tick();
+
 
 			   
 			   

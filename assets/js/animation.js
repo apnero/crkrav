@@ -4,9 +4,9 @@ $(function(){
     if (jQuery.browser.mobile === false) 
     {
         // Animate elements in Intro Section
-        $('#rj-intro > .intro-body > .intro-content').css('opacity', 0).one('inview', function(isInView) {
-            if (isInView) {$(this).addClass('animated bounceIn').css('opacity', 1);}
-        });
+  //      $('#rj-intro > .intro-body > .intro-content').css('opacity', 0).one('inview', function(isInView) {
+ //           if (isInView) {$(this).addClass('animated bounceIn').css('opacity', 1);}
+  //      });
         
         
         // Animate elements in Who We Are Section
