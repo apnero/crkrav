@@ -326,7 +326,8 @@ button.btn.btn-custom:hover {
 #rj-intro {
     display: table;
     width: 100%;
-    height: inherit;
+   min-height: 85%;
+	height: auto;
     color: #fff;
     background: rgba(0, 0, 0, 0.9);
 }
@@ -339,7 +340,7 @@ button.btn.btn-custom:hover {
 
 @media (min-width: 1279px) {
     #rj-intro {
-        height: 100%;
+       
         padding: 0px;
     }
 }
