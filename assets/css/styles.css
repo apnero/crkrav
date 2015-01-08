@@ -326,24 +326,32 @@ button.btn.btn-custom:hover {
 #rj-intro {
     display: table;
     width: 100%;
-   min-height: 85%;
-	height: auto;
+	height: 734px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.9);
+    
 }
 
-@media (min-width: 1023px) {
-    #rj-intro {
-        background: rgba(0, 0, 0, 0.7);
-    }
-}
-
-@media (min-width: 1279px) {
+@media (min-width: 500px) {
     #rj-intro {
        
-        padding: 0px;
     }
 }
+
+@media (min-width: 750px) {
+    #rj-intro {
+       
+}
+
+@media (min-width: 1000px) {
+    #rj-intro {
+      
+    }
+}
+
+
+
+
+
 
 #rj-intro .intro-body {
     position: relative;

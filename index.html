@@ -24,6 +24,8 @@
     <!-- Plugins CSS -->
     <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
+	    <link href="assets/plugins/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="assets/plugins/owl.theme.css" rel="stylesheet" type="text/css">
     
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
@@ -210,38 +212,52 @@
     <!-- //END WHO WE ARE SECTION -->
     
     
-    
-    
-    <!-- BEGIN INTRO SECTION -->
-    <!-- BEGIN INTRO SECTION -->
-    <section id="rj-intro" class="section hide">
-        
-        <div class="intro-body text-center">
-            
-            <div class="container intro-content">
+     <!-- BEGIN WHO WE ARE SECTION -->
+    <section id="rj-who-we-are" class="section">
+
+        <div class="section-inner">
+
+            <div class="container section-content" style="padding-left:0;padding-right:0;padding-top:20px;padding-bottom:10px;">
+
+                <!-- //.row -->
+
                 <div class="row">
-                    <div id="christext" class="col-md-6">
- 
-                        
-                        <div class="intro-text text-center">
-                           
-                            
-                            <p id="chris1text" class="lead">
-							</p>
-
+                    <div class="col-md-12">
+                        <div id="carousel-who-we-are" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="assets/img/intro/chris1.jpg" alt="" class="img-responsive img-rounded"/>
+								<div class="col-md-10 col-md-offset-1">
+								<h3 class="sub-title text-center">From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations.</h3>
+								</div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/intro/chris1.jpg" alt="" class="img-responsive img-rounded"/>
+								<div class="col-md-10 col-md-offset-1">
+								<h3 class="sub-title text-center">In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel the globe and has provided his services to clients all over the world.</h3>
+								</div>
+                            </div>
+                            <div class="item">
+                                <img src="assets/img/intro/chris1.jpg" alt="" class="img-responsive img-rounded"/>
+ 								<div class="col-md-10 col-md-offset-1">
+								<h3 class="sub-title text-center">Adding to his credentials, Chris was certified through the Israeli Krav Maga Association (Gidon System) as well as Nir Maman’s CT707 Israeli Special Forces Krav Maga. In 2012 he opened Cannon Ridge Training Center to begin teaching Israeli Krav Maga to men in women in CT.</h3>
+								</div>
+							</div>
                         </div>
-                        
-
-                        <!-- //.page-scroll -->
+                        <!-- //.owl-carousel -->
                     </div>
+
+                   
                 </div>
                 <!-- //.row -->
             </div>
-            <!-- //.container -->
+            <!-- //.section-content -->
         </div>
-        <!-- //.intro-body -->
+        <!-- //.section-inner -->
     </section>
-    <!-- //END INTRO SECTION -->
+    <!-- //END WHO WE ARE SECTION --> 
+    
+    <!-- BEGIN INTRO SECTION -->
+
 
 	
 <!-- Modal -->
@@ -886,7 +902,7 @@
     <script src="assets/plugins/jquery-backstretch/jquery.backstretch.min.js"></script>
     <script src="assets/plugins/jquery.sticky.js"></script>
     <script src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
-
+	<script src="assets/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/video.js"></script> 
     <!-- Custom Theme JS -->
     <script src="assets/js/rinjani.js"></script>
@@ -901,10 +917,7 @@
 	 var audio = $("#audio_player");
 		audio[0].volume = .2;
 		audio[0].play();
-		jQuery(document).ready(function() {
-							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-		
-		});
+
 	
     </script>
 
@@ -967,7 +980,24 @@
 					//google.maps.event.trigger(map, "resize");
 					//map.setCenter(center);
 
-
+				jQuery(document).ready(function() {
+									!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+				});
+				
+				$("#carousel-who-we-are").owlCarousel({
+				 
+					  autoPlay: 5000, //Set AutoPlay to 3 seconds
+						slideSpeed : 300,
+					paginationSpeed : 400,
+					pagination: false,
+					navigation : false,
+					   singleItem:true,
+					   lazyLoad:true
+				 
+				  });
+  
+  
+		
 				var items = [
 				  { img: "assets/img/intro/chris1.jpg", caption: "From a young age Chris was passionate about sports and athletic player development. Raised in Newtown CT he was a multi sport athlete. While attending Sacred Heart University he became fascinated with the security and safety field. He continued his education and began extensive training in executive protection and advanced security operations."},
 				  { img: "assets/img/intro/chris2.jpg", caption: "In 2002 he began providing security coverage for many well-known celebrities, as well as corporate executives and former government officials. Chris has had the great opportunity to extensively travel the globe and has provided his services to clients all over the world."},
