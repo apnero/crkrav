@@ -870,3 +870,18 @@ text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
 
 }
 
+/* ---------------------------------------------------------
+ *	Twitter
+ * --------------------------------------------------------- */
+#twitterFeed ul {
+  padding: 0;
+  list-style: none;
+}
+#twitterFeed .timePosted {
+  opacity: 0.7;
+  font-size: 13px;
+}
+.twitter-feed-icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}

@@ -4,19 +4,19 @@ app.use(express.static(__dirname ));
 
 app.use(express.bodyParser());
 
-var postmark = require("postmark")("6d3c5ce6-1ce8-4906-b426-05eeba4fd1e2")
+var postmark = require("postmark")("ff4a1e02-a2bf-4b6a-9a1d-763471e06995")
 
 
 
 app.post('/getFormData', function(req, res) {
   postmark.send({
-    "From": "email@plasmagfx.com",
-    "To": "inquire@plasmasgfx.com",
-    "Subject": "EMAIL FROM PLASMAGFX",
-    "TextBody": new String('From: ' + req.body.name + '.\n\rEmail: ' + req.body.email + '.\n\rPhone: ' + req.body.phone + '.\n\rSubject: ' + req.body.subject + '.\n\rMessage: ' + req.body.message)
+    "From": "email@plasmascape.com",
+    "To": "fighttactix@gmail.com",
+    "Subject": "EMAIL FROM FightTactiX WEBSITE",
+    "TextBody": new String('From: ' + req.body.name + '.\n\rEmail: ' + req.body.email + '.\n\rPhone: ' + req.body.phone + '.\n\rShirt Size: ' + req.body.shirt)
 	}, function(error, success) {
     if(error) {
-        res.send("We have had technical difficulties and we regret to say you email hasn't been delivered to PlasmaGFX");
+        res.send("We have had technical difficulties and we regret to say you email hasn't been delivered to Cannon Ridge");
        return;
     }
     res.send("Thank you for contacting us.  We will respond as soon as possible.")

@@ -26,7 +26,7 @@
     <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
 	    <link href="assets/plugins/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/owl.theme.css" rel="stylesheet" type="text/css">
-    
+    		<link href="assets/css/jquery.bxslider.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
@@ -553,50 +553,19 @@
   
     </section>
     <!--//END QUOTE SECTION -->
-				  <!-- BEGIN FUNNY BOXES SECTION -->
-    <section id="rj-funny-boxes7" class="section hide">
-        
-        <div id="schedule" class="section-inner">
-            
-            <div class="container section-content" style="padding-top:35px;padding-bottom:0;">
-                <div class="row">
-					<img src="assets/img/twitter.png" alt="Schedule">
-                </div>    
-                <!-- //.row -->
 
-            </div>
-            <!-- //.section-content -->
-        </div>
-        <!-- //.section-inner -->
-    </section>
-    <!--//END FUNNY BOXES SECTION -->
 	
-	<!-- BEGIN FUNNY BOXES SECTION -->
-    <section id="rj-funny-boxes3" class="section hide">
-        
-        <div id="tweets" class="section-inner">
-            
-            <div class="container section-content" style="padding-top:20px;">
-                    <div class="row">
-<!-- 						 <div class="col-md-6">
-							<img src="assets/img/ladiesnight.jpg" alt="Schedule">
-						</div>	 -->
-						<div class="col-md-6 col-md-offset-3">
-							<div class="section-title text-center">
-									<span class="section-line"></span>
-									<a class="twitter-timeline" data-tweet-limit="5" data-theme="dark"  data-link-color=”#ffffff” data-chrome="noscrollbar transparent noheader nofooter" href="https://twitter.com/CannonRidgeTC"  data-widget-id="375080039445823488">Tweets by @CannonRidgeTC</a> 
-
-							</div>
-						</div>
+			<section class="section hide" id="tweets" style="padding-bottom:40px;padding-top:40px">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">
+						<i class="fa fa-twitter twitter-feed-icon"></i>
+						<span id="twitterFeed"></span>
 					</div>
-                <!-- //.row -->
+				</div>
+			</div>
+		</section>
 
-            </div>
-            <!-- //.section-content -->
-        </div>
-        <!-- //.section-inner -->
-    </section>
-    <!--//END FUNNY BOXES SECTION -->
 	
 	
 	
@@ -904,13 +873,14 @@
     <script src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
 	<script src="assets/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/video.js"></script> 
+			<script src="assets/js/jquery.bxslider.min.js"></script>
     <!-- Custom Theme JS -->
     <script src="assets/js/rinjani.js"></script>
 
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/features/meet-the-team.js"></script>
     <script src="assets/js/features/funny-boxes.js"></script>
-
+<script src="assets/js/twitterFetcher.min.js"></script>
 	<script type="text/javascript" src="assets/plugins/wow.min.js"></script>
 
 	<script type="text/javascript">
@@ -926,6 +896,24 @@
 	
  
 		function start(){
+		
+			 twitterFetcher.fetch({
+        id: "375080039445823488",
+        domId: "",
+        maxTweets: 3,
+        enableLinks: !0,
+        showInteraction: !1,
+        showUser: !1,
+        customCallback: function(a) {
+            for (var b = a.length, c = 0, d = '<ul class="twitterFeed">'; b > c;) d += "<li>" + a[c] + "</li>", c++;
+            d += "</ul>", $("#twitterFeed").html(d), $(".twitterFeed").bxSlider({
+                nextText: "",
+                prevText: ""
+            })
+        }
+    });
+	
+	
 			$('#rj-loader2').hide();
 			var myPlayer = videojs("video_1");
 			var testimonialPlayer = videojs("video_2");
@@ -961,7 +949,7 @@
 					$('#rj-funny-boxes4').removeClass('hide');
 					$('#rj-funny-boxes5').removeClass('hide');
 					$('#rj-funny-boxes6').removeClass('hide');
-					$('#rj-funny-boxes7').removeClass('hide');
+					$('#tweets').removeClass('hide');
 					$('#rj-funny-boxes8').removeClass('hide');
 					$('#rj-team').removeClass('hide');
 					$('#rj-funny-boxes10').removeClass('hide');
@@ -980,10 +968,6 @@
 					//google.maps.event.trigger(map, "resize");
 					//map.setCenter(center);
 
-				jQuery(document).ready(function() {
-									!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-				});
-				
 				$("#carousel-who-we-are").owlCarousel({
 				 
 					  autoPlay: 5000, //Set AutoPlay to 3 seconds
@@ -1053,6 +1037,9 @@
      </script>
 	 
 	 <script>
+	 
+
+	
 /*      var randomImage = {
         paths: [
           "assets/img/camoA.png",
