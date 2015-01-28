@@ -21,11 +21,14 @@
     <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     
     <!-- Plugins CSS -->
-    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+     <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
 	    <link href="assets/plugins/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/owl.theme.css" rel="stylesheet" type="text/css">
     		<link href="assets/css/jquery.bxslider.css" rel="stylesheet">
+    		<link rel="stylesheet" href="assets/css/flexslider.css">
+    		<link id="main" rel="stylesheet" href="assets/css/designr-theme-cyan2.css">
     <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/navbar.css" rel="stylesheet" type="text/css">
@@ -96,7 +99,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="cr_item" class="navbar-brand" href="#page-top">Cannon Ridge</a>
+                <a id="cr_item" class="navbar-brand" href="#page-top">Fight Tactix</a>
             </div>
             
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -125,21 +128,20 @@
   
         <!-- BEGIN QUOTE SECTION -->
     <section id="rj-charts2" class="section section-bgtype-image">
-			<div class="video">
+ 			
+    			<!-- <img class="img-responsive" src="assets/img/onblack.jpg"> -->
+			
+			<div class="video hide" >
 				
 					<video id="video_1" height="100%" width="100%" class="video-js vjs-default-skin" autoplay loop preload="all">
-						<source src="assets/img/intro.mp4" type='video/mp4' />
-						<source src="assets/img/intro.webm" type='video/webm' />
-						<!-- <source src="assets/img/intro.ogv" type='video/ogg' /> -->
+						<source src="" type='video/mp4' />
+						<source src="" type='video/webm' />
+						
 					</video>			
 			</div>   
         <div class="section-inner">
             
-           
-    
-          <!--   <div class="container section-content">
-            </div> -->
-            <!-- //.section-content -->
+
         </div>
         <!-- //.section-inner -->
     </section>
@@ -197,7 +199,7 @@
                     <div class="col-md-6 col-xs-12 col-lg-6 col-sm-12">
                         <div class="who-we-are-text">
                            <!--  <h4>A Little About Our Past</h4> -->
-                            <p class="text-center"><b>Krav Maga</b> is iHebrew for "Contact Combat". This system uses practical applications which can be easily acquired regardless of size and strength and teaches each student not only to protect themselves against an attacker but to help them physically and mentally prepare for the unexpected. This style of training does not require a uniform; we train in casual gym clothes and sneakers. We do our best to replicate real-life scenarios and environments. Our training comes directly from Israel and we teach Krav Maga in the fighting system's most modern evolution. Krav Maga has been tested and proven to be the most effective defense system on the planet. Classes are conducted in a safe and comfortable environment for all fitness and skill levels.</p>
+                            <p class="text-center"><b>Krav Maga</b> is Hebrew for "Contact Combat". This system uses practical applications which can be easily acquired regardless of size and strength and teaches each student not only to protect themselves against an attacker but to help them physically and mentally prepare for the unexpected. This style of training does not require a uniform; we train in casual gym clothes and sneakers. We do our best to replicate real-life scenarios and environments. Our training comes directly from Israel and we teach Krav Maga in the fighting system's most modern evolution. Krav Maga has been tested and proven to be the most effective defense system on the planet. Classes are conducted in a safe and comfortable environment for all fitness and skill levels.</p>
                         </div>
                         <!-- //.who-we-are-text -->
                     </div>
@@ -554,18 +556,36 @@
     <!--//END QUOTE SECTION -->
 
 	
-			<section class="section hide" id="tweets" style="padding-bottom:40px;padding-top:40px">
+<!-- 			<section class="section hide" id="tweets" style="padding-bottom:40px;padding-top:40px">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">
-						<i class="fa fa-twitter twitter-feed-icon"></i>
+						<i class="fa fa-twitter fa-3x twitter-feed-icon"></i>
 						<span id="twitterFeed"></span>
 					</div>
 				</div>
 			</div>
 		</section>
-
-	
+ -->
+			<!-- ==============================================
+		TWITTER FEED
+		=============================================== -->	
+		<section id="twitter" class="hide">
+			<div class="container">
+				<div class="row scrollimation fade-in">
+					<div class="col-sm-1 twitter-icon">
+						<i class="icon-twitter"></i>
+					</div>
+					<div class="col-sm-11">
+						<div id="twitter-slider" class="flexslider" data-widget-id="375080039445823488" data-tweets-length="3">
+						
+						</div>
+					</div>
+				</div><!-- End row -->
+			</div><!-- End container -->
+			
+		</section><!-- End Twitter section -->
+		
 	
 	
              <!-- BEGIN QUOTE SECTION -->
@@ -872,16 +892,18 @@
     <script src="assets/plugins/jquery-inview/jquery.inview.min.js"></script>
 	<script src="assets/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/video.js"></script> 
-			<script src="assets/js/jquery.bxslider.min.js"></script>
+			<!-- <script src="assets/js/jquery.bxslider.min.js"></script> -->
     <!-- Custom Theme JS -->
     <script src="assets/js/rinjani.js"></script>
-
+<script src="assets/js/slideshow-bg-image.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/features/meet-the-team.js"></script>
     <script src="assets/js/features/funny-boxes.js"></script>
-<script src="assets/js/twitterFetcher.min.js"></script>
+   
+    <script src="assets/js/jquery.flexslider.min.js"></script>
+<script src="assets/js/twitterFetcher_v10.min.js"></script>
 	<script type="text/javascript" src="assets/plugins/wow.min.js"></script>
-
+ <script src="assets/js/designr.js"></script>
 	<script type="text/javascript">
 	 var audio = $("#audio_player");
 		audio[0].volume = .2;
@@ -896,21 +918,21 @@
  
 		function start(){
 		
-			 twitterFetcher.fetch({
-        id: "375080039445823488",
-        domId: "",
-        maxTweets: 3,
-        enableLinks: !0,
-        showInteraction: !1,
-        showUser: !1,
-        customCallback: function(a) {
-            for (var b = a.length, c = 0, d = '<ul class="twitterFeed">'; b > c;) d += "<li>" + a[c] + "</li>", c++;
-            d += "</ul>", $("#twitterFeed").html(d), $(".twitterFeed").bxSlider({
-                nextText: "",
-                prevText: ""
-            })
-        }
-    });
+			 // twitterFetcher.fetch({
+    //     id: "375080039445823488",
+    //     domId: "",
+    //     maxTweets: 5,
+    //     enableLinks: !0,
+    //     showInteraction: !1,
+    //     showUser: !1,
+    //     customCallback: function(a) {
+    //         for (var b = a.length, c = 0, d = '<ul class="twitterFeed">'; b > c;) d += "<li>" + a[c] + "</li>", c++;
+    //         d += "</ul>", $("#twitterFeed").html(d), $(".twitterFeed").bxSlider({
+    //             nextText: "",
+    //             prevText: ""
+    //         })
+    //     }
+    // });
 	
 	
 			$('#rj-loader2').hide();
@@ -961,6 +983,8 @@
 					$('#rj-counters').removeClass('hide');
 					$('#rj-contact-us').removeClass('hide');
 					$('#rj-keep-in-touch').removeClass('hide');
+					$('#twitter').removeClass('hide');
+					$('.video').removeClass('hide');
 					$('#rj-charts2').height('auto');
 					//$('#video_2').css( "opacity", ".9" );
 					//var center = map.getCenter();

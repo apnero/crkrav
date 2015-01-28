@@ -19,10 +19,10 @@ $(function(){
 
 		
 		
-		// $('#rj-charts2').backstretch([
-		// "assets/img/main1.png"
-        // ,  "assets/img/main1.png"
-        // ], {duration: 3500, fade: 3500});
+		 // $('#rj-charts2').backstretch([
+		 // "assets/img/onblack.jpg"
+   //       ,  "assets/img/onblack.jpg"
+   //       ], {duration: 3500, fade: 3500});
 
 	}
 		

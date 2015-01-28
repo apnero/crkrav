@@ -1,0 +1,108 @@
+/*----------------------
+---Main Layout Styles---
+------------------------*/
+
+/*----------------------
+-----Twitter Styles-----
+------------------------*/
+
+#twitter {
+    color:#fff;
+    background:#1E1D1E;
+    padding:60px 0;
+}
+
+#twitter a:hover,
+#twitter a:active,
+#twitter a:focus{
+    text-decoration:none;
+}
+
+#twitter h1{
+    position:relative;
+}
+
+#twitter .tweet{
+    font-size:24px;
+    line-height:36px;
+    font-weight:300;
+	word-spacing:5px;
+    margin-bottom:40px;
+}
+
+#twitter .tweet a:hover{
+    text-decoration:underline;
+}
+
+#twitter .timePosted{
+    display:inline-block;
+    font-size:16px;
+    font-weight:300;
+    margin-bottom:20px;
+}
+
+#twitter .interact{
+    margin-left:20px;
+    padding-right:80px;
+    display:inline-block;
+    font-size:21px;
+    font-weight:300;
+}
+
+#twitter .interact a {
+    margin-right:6px;
+}
+
+#twitter .twitter-icon {
+    padding-top:6px;
+    text-align:center;
+}
+
+#twitter .icon-twitter {
+    font-size:70px;
+}
+
+#twitter-slider{
+    border:none;
+    box-shadow:none;
+    background:transparent;
+    margin:0;
+    padding:0;
+}
+
+#twitter-slider .flex-direction-nav {
+    display:block;
+    position:absolute;
+    bottom:10px;
+    right:0;
+}
+
+#twitter-slider .flex-direction-nav li{
+    display:inline;
+}
+
+#twitter .flex-direction-nav .flex-prev,
+#twitter .flex-direction-nav .flex-next{
+    background:transparent;
+    background-image:none;
+    display:inline;
+    opacity:1;
+    text-indent:0;
+    position:relative;
+    left:0;
+    top:0;
+    width:auto;
+    height:42px;
+    padding:0;
+    margin:0;
+    margin-left:7px;
+    font-size:42px;
+    line-height:42px;
+    color:#fff;
+}
+
+#twitter-slider .flex-direction-nav a:hover,
+#twitter-slider .flex-direction-nav a:active,
+#twitter-slider .flex-direction-nav a:focus{
+    text-decoration:none;
+}
