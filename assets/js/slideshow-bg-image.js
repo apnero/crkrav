@@ -1,8 +1,8 @@
 $(function(){
     
     // jQuery backstretch
-    if (jQuery.browser.mobile === false) 
-    {
+  //  if (jQuery.browser.mobile === false) 
+  //  {
 /*         $('#rj-intro').backstretch([
 		"assets/img/intro/1.jpg"
         ,  "assets/img/intro/2.jpg"
@@ -24,7 +24,7 @@ $(function(){
    //       ,  "assets/img/onblack.jpg"
    //       ], {duration: 3500, fade: 3500});
 
-	}
+	//}
 		
 		
 });

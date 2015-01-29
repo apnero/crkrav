@@ -32,6 +32,6 @@ $(function() {
     
     
     // jQuery sticky
-    $("#navigation").sticky({topSpacing: 0});
+ $("#navigation").sticky({topSpacing: 0});
 });
 

@@ -1,6 +1,6 @@
 $(function(){
     // Only animate elements when using non-mobile devices    
-    if (jQuery.browser.mobile === false) 
+   if (jQuery.browser.mobile === false) 
     {
         // Animate elements in Meet The Team Section
         $('.team-item > .team-element').each(function(i)
