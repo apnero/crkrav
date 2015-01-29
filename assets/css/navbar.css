@@ -15,6 +15,7 @@
 }
 
 .navbar.rj-navbar .navbar-brand {
+    font-family: 'Hammersmith One', sans-serif;
     color: #faaaaa;
     font-size: 28px;
     text-transform: uppercase;
@@ -26,6 +27,7 @@
 }
 
 .navbar.rj-navbar .navbar-nav > li > a {
+    font-family: 'Hammersmith One', sans-serif;
     color: #fff;
     font-weight: 300;
     text-transform: uppercase;

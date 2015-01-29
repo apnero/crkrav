@@ -39,6 +39,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Hammersmith One', sans-serif;
     margin: 0 0 20px;
 }
 
@@ -48,6 +49,7 @@ img {
 }
 
 p {
+   font-family: 'Hammersmith One', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
@@ -301,7 +303,7 @@ button.btn.btn-custom:hover {
     margin-left: -64px;
 }
 
-#rj-loader2 {
+#entersign {
     position: fixed;
     left: 45%;
     top: 85%;
@@ -311,7 +313,7 @@ button.btn.btn-custom:hover {
     #background-color: #fff;
 }
 
-#rj-loader2 .preload {
+#entersign .preload {
     width: 128px;
     height: 128px;
     position: absolute;
@@ -799,6 +801,7 @@ footer.footer #rj-footer ul.social-icon-list > li {
 }
 
 footer.footer #rj-footer ul.social-icon-list > li a {
+    font-family: 'Hammersmith One', sans-serif;
     display: block;
     width: 40px;
     height: 40px;
