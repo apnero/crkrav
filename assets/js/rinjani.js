@@ -1,9 +1,9 @@
 $(function() {
     
     // jQuery for page loader
-    $(window).load(function() {
-        $('#rj-loader').fadeOut('fast');
-    });
+    // $(window).load(function() {
+    //     $('#rj-loader').fadeOut('fast');
+    // });
     
     
     // jQuery for the Side Menu

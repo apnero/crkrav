@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	
+	$('#rj-loader').fadeOut('fast');
 	/*============================================
 	Twitter Functions
 	==============================================*/
