@@ -536,13 +536,13 @@
                 <!-- //.row -->
                 
                 <div class="row">
-                    <form role="form" class="contact-us-form">
+                    <form action="/getFormData" method="post" class="contact-form" role="form">
                         <div class="col-md-5 col-md-offset-1">
                             <div class="form-group">
                                 <label for="name">Name*</label>
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input type="text" id="name" class="form-control">
+                                    <input type="text" name="name" id="name" class="form-control">
                                 </div>
                                 <!-- //.input-group -->
                             </div>
@@ -552,7 +552,7 @@
                                 <label for="email">Email*</label>
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input type="email" id="email" class="form-control">
+                                    <input type="email" name="email" id="email" class="form-control">
                                 </div>
                                 <!-- //.input-group -->
                             </div>
@@ -562,7 +562,7 @@
                                 <label for="subject">Subject*</label>
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon"><i class="fa fa-info"></i></span>
-                                    <input type="text" id="subject" class="form-control">
+                                    <input type="text" name="subject" id="subject" class="form-control">
                                 </div>
                                 <!-- //.input-group -->
                             </div>
@@ -574,7 +574,7 @@
                                 <label for="message">Message*</label>
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-addon"><i class="fa fa-pencil"></i></span>
-                                    <textarea id="message" class="form-control"></textarea>
+                                    <textarea name="message" id="message" class="form-control"></textarea>
                                 </div>
                                 <!-- //.input-group -->
                             </div>
@@ -924,6 +924,23 @@
             <!-- //.container -->
         </div>
         <!--//END COPYRIGHT -->
+                <div class="modal fade" id="confirmEmailDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top:5%">
+          <div class="modal-dialog modal-lg" style="background-color:#061111;">
+            <div class="modal-content" style="background-color:#041111; >
+
+              <div class="modal-title">
+                <h2>Congratulaions!! You are now registered for your free month of classes at Fight TactiX.</h2>
+                
+              </div>
+              <div class="modal-body">
+                <h2>We will be in touch soon to schedule your first class!</h2>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         
     </footer>
     <!-- //END FOOTER -->
@@ -958,6 +975,20 @@
 		audio[0].play();
 
 	
+    </script>
+
+    <script>
+            $("form").submit(function(e) {
+                e.preventDefault(); // Prevents the page from refreshing
+                var $this = $(this); // `this` refers to the current form element
+                $.post(
+                    $this.attr("action"), // Gets the URL to sent the post to
+                    $this.serialize(), // Serializes form data in standard format
+                    function(data) { /** code to handle response **/ },
+                    "json" // The format the response should be in
+                );
+                $('#confirmEmailDialog').modal('toggle')
+            });
     </script>
 
 
