@@ -328,7 +328,7 @@ button.btn.btn-custom:hover {
 #rj-intro {
     display: table;
     width: 100%;
-	height: 734px;
+    height: 734px;
     color: #fff;
     
 }
@@ -449,7 +449,7 @@ button.btn.btn-custom:hover {
 }
 
 #whowearesection h2 {
-	font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 
 }
 
@@ -488,7 +488,7 @@ button.btn.btn-custom:hover {
 #rj-counters {
     background-image: url("../img/testimonial.png");
     #background-position: bottom center;
-	height: 80%;
+    height: 80%;
 }
 
 
@@ -496,15 +496,15 @@ button.btn.btn-custom:hover {
 
 #rj-charts {
     background-color: #000000;
-	background-image: url("../img/bg-noise.png");
-	height: 80%;
+    background-image: url("../img/bg-noise.png");
+    height: 80%;
 }
 
 /* ##### CHARTS SECTION ##### */
 
 #topsection{
-	background-image: url("../img/symbol.jpg");
-	background-repeat:no-repeat;
+    background-image: url("../img/symbol.jpg");
+    background-repeat:no-repeat;
 background-size:contain;
 background-position:center;
 height: 100%;
@@ -512,10 +512,10 @@ background-color: #000000;
 }
 
 #testimonialsection{
-	    background-color: #fff;
+        background-color: #fff;
     background-image: url("../img/bg-noise.png");
     background-repeat: repeat;
-	#height: 75%;
+    #height: 75%;
 }
 
 
@@ -658,7 +658,7 @@ background-color: #000000;
 #rj-contact-us .form-group input,
 #rj-contact-us .form-group textarea {
     color: #faaaaa;
-	background-color: rgba(255, 255, 255, 0.10);
+    background-color: rgba(255, 255, 255, 0.10);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -876,18 +876,18 @@ text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
     overflow: hidden;
 }
 
-#map {
-    width: 50%;
-    height: 450px;
-}
 
 
-#panorama {
+
+#map, #panorama {
     width: 50%;
   height:450px;
   background:#000000;
   opacity:.5;
 }
+
+#panorama  img { max-width: none; }
+#map img { max-width: none;}
 
 .gmnoscreen {
 
