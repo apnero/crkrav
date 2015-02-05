@@ -877,9 +877,74 @@ text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
 }
 
 #map {
-    width: 100%;
+    width: 50%;
     height: 450px;
 }
+
+
+#panorama {
+    width: 50%;
+  height:450px;
+  background:#000000;
+  opacity:.5;
+}
+
+.gmnoscreen {
+
+    visibility: hidden;
+}
+
+
+
+.main {
+    position: absolute;
+    top:0px;
+    left:34%;
+    height: 50px;
+
+}
+
+#player {
+    width: 350px;
+    height: 50px;    
+    position: relative;
+    margin: 0 auto;
+    top: 15px;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-background.png') no-repeat left top;
+}
+
+#volume {
+    position: absolute;
+    left: 24px;
+    margin: 0 auto;
+    height:15px;
+    width: 300px;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-empty.png') no-repeat left top;
+  border: none;
+  outline: none;
+}
+
+#volume .ui-slider-range-min {
+    height:15px;
+    width: 300px;
+    position: absolute;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-full.png') no-repeat left top;
+  border: none;
+  outline: none;
+}
+
+#volume .ui-slider-handle {
+    width: 38px;
+    height:39px;
+    background: url('http://iviewsource.com/exercises/audioslider/images/volume-knob.png') no-repeat left top;
+    position: absolute;
+    margin-left: -15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
 
 
 
@@ -948,3 +1013,7 @@ media screen and(min - width: 768 px) {.carousel - control.glyphicon - chevron -
     }.carousel - indicators {
         bottom: 20 px
     }
+
+
+
+

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/font-awesome.css">
      <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/plugins/animate-css/animate.min.css" rel="stylesheet" type="text/css">
-
+<link href="assets/css/jquery-ui.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/flexslider.css">
     <link id="main" rel="stylesheet" href="assets/css/designr-theme-cyan2.css">
     <!-- Custom CSS -->
@@ -90,8 +90,10 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a id="cr_item" class="navbar-brand" style="padding: 5px 15px;" href="#page-top"><img src="assets/img/ftlogo.png" class ="img-responsive"</img></a>
+
+
             </div>
-            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-rj-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -105,7 +107,11 @@
                         <a id="contact_item" href="#contact">Contact Us</a>
                     </li>
                 </ul>
-            </div>
+            </div>                <div class="main">
+                     <div id="player">
+                        <div id="volume"></div>
+                     </div>
+                </div>
             <!-- //.navbar-collapse -->
         </div>
         <!-- //.container -->
@@ -206,6 +212,7 @@
  
  
    <div id="carousel-main" class="starthidden hide carousel slide" data-ride="carousel">
+        <div style="z-index:100;position:absolute; left:0px;top:0px;background-color:#000000;opacity:.75;height:70px;width:290px;"><h2 class="text-center" style="margin: 5px 0 0;">Chris Pettiti</h2><h3 class="text-center" >Owner - Head Instructor</h3></div>
   <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#carousel-main" data-s lide-to="0" class="active"></li>
@@ -506,16 +513,17 @@
     </section> -->
    
    
-    
 	
 	
     <section id="mapsection" class="section starthidden hide gmap">
 
-			<div id="map"></div>
+			<div class="col-lg-12 col-md-12 col-sm-12" id="map"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12" id="panorama"><div id="arrow" style="z-index:100;position:absolute; left:100px;bottom:120px;opacity:.7;"><img class="img-responsive" src="assets/img/arrow.gif"></div></div>
+         
+
+	</section><!-- .section gmap -->
 
 
-
-		</section><!-- .section gmap -->
  
     <section id="contactustextsection" class="section starthidden hide">
         
@@ -887,8 +895,8 @@
                             <h4>Get In Touch</h4>
                         <ul class="icon-list list-unstyled">
                                 <li><i class="fa fa-phone"></i> 203-307-5728</li>
-                                <li><i class="fa fa-envelope-o"></i> cannonridgect@gmail.com</li>
-                                <li><i class="fa fa-map-marker"></i> 482 Pepper St., Monroe, CT</li>
+                                <li><i class="fa fa-envelope-o"></i> fighttactix@gmail.com</li>
+                                <li><i class="fa fa-map-marker"></i> 190 White Street, Danbury, CT</li>
                             </ul>
                             <ul class="social-icon-list list-unstyled list-inline">
                                 <li><a href="https://www.facebook.com/cannonridgetrainingcenter"><i class="fa fa-facebook"></i></a></li>
@@ -966,6 +974,7 @@
 			<!-- <script src="assets/js/jquery.bxslider.min.js"></script> -->
     <!-- Custom Theme JS -->
     <script src="assets/js/rinjani.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
 <!-- <script src="assets/js/slideshow-bg-image.js"></script> -->
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/features/meet-the-team.js"></script>
@@ -978,7 +987,7 @@
  <script src="assets/js/designr.js"></script>
 	<script type="text/javascript">
 	 var audio = $("#audio_player");
-		audio[0].volume = .1;
+		audio[0].volume = .005;
 		audio[0].play();
 
 	
@@ -1032,14 +1041,36 @@
 			$('.video').removeClass('hide');
 			$('#topsection').height('auto');
 
+
 					
         /*
         * Google Map
         */
-        map = new GMaps({
+                panorama = GMaps.createPanorama({
+          el: '#panorama',
+            lat: 41.399462,
+            lng: -73.443774,
+            pov: { heading: 143.47, pitch: 0, zoom: 1 },
+
+           pov_changed: function(e) {
+              $('#arrow').addClass('hide');
+         }
+           ,
+        });  
+
+
+
+
+
+
+map = new GMaps({
             el: '#map',
             scrollwheel: false,
             disableDefaultUI: true,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.LARGE
+            },
             lat: 41.399095,
             lng: -73.44344,
             styles: [
@@ -1086,9 +1117,13 @@
                     lng: -73.44344,
                     title: 'Fight Tactix',
                     infoWindow: {
-                        content: '<p><strong>Fight Tactix</strong></p>'
+                        content: '<p><strong>Fight Tactix</strong></p><p>190 White Street, Danbury, CT<\p>'
                     }
                 });			
+
+                
+
+
         	};       
 		
 	   $('#enter').click(start);
@@ -1096,7 +1131,8 @@
 	   $('#tweets_item').click(start);
 	   $('#sch_item').click(start);
 	   $('#contact_item').click(start);
-			   
+	  
+
 
      </script>
 	 
@@ -1110,6 +1146,26 @@
             function A (){ window.setTimeout( B,5000);};
             function B (){ speed = -1*speed; obt1.play(speed-.1); A()};
   </script>
+  
+  <script>
+              $("#volume").slider({
+                min: 0,
+                max: 100,
+                value: 0,
+                    range: "min",
+                    animate: true,
+                slide: function(event, ui) {
+                  setVolume((ui.value) / 200);
+                }
+              });
+
+
+
+            function setVolume(myVolume) {
+                var myMedia = document.getElementById('audio_player');
+                myMedia.volume = myVolume;
+            }
+</script>
 
 
 
