@@ -871,7 +871,6 @@ text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
 .gmap {
     padding: 0;
     width: 100%;
-    height: 450px;
     position: relative;
     overflow: hidden;
 }
@@ -880,10 +879,15 @@ text-shadow: -2px -1px 30px rgba(0, 0, 0, 1);
 
 
 #map, #panorama {
-    width: 50%;
   height:450px;
   background:#000000;
   opacity:.5;
+}
+
+@media (min-width: 767px) {
+    #map, #panorama {
+        width: 50%;
+    }
 }
 
 #panorama  img { max-width: none; }
