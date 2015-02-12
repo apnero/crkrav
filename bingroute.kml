@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name>Fight Tactix</name>
+    <description />
+    <Style id="S2">
+      <LineStyle>
+        <color>C800FF00</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>64008000</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <name>Fight Tactix</name>
+      <description />
+      <Point>
+        <coordinates>-73.44421710544489,41.398556491485685</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Untitled item</name>
+      <description />
+      <styleUrl>#S2</styleUrl>
+      <LineString>
+        <coordinates>-73.44421739092095,41.39851378335039 -73.44427031626094,41.398353481855644 -73.44415509655377,41.398238024031954 -73.44392994171234,41.39822796993314 -73.4438160912709,41.398260481786764 -73.44379742182676,41.398362278020734 -73.44380228920593,41.39851131007991 -73.44379191443717,41.39860139976509 -73.44369369340227,41.398696609700224 -73.44364093316669,41.39878828638843 -73.44364580854726,41.39889215410099 -73.44366918327187,41.3990364647544 -73.44368047010721,41.399127739762 -73.44370030925627,41.39923766007209 -73.44371544700888,41.39931714181099 -73.44371226040467,41.39940758608804</coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>

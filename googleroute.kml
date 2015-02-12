@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<name>Fight Tactix Layer</name>
+		<Placemark>
+			<styleUrl>#line-3838FF-1</styleUrl>
+			<name>Fight Tactix Path</name>
+			<ExtendedData>
+			</ExtendedData>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>-73.4436893,41.3993969,0.0 -73.4436411,41.3992239,0.0 -73.4436303,41.39905890000001,0.0 -73.4436116,41.3987671,0.0 -73.4437323,41.3986082,0.0 -73.44381,41.3984412,0.0 -73.4437966,41.3983185,0.0 -73.4440568,41.3982662,0.0 -73.4442526,41.3982601,0.0 -73.4443063,41.3984171,0.0 -73.4442687,41.3985257,0.0 -73.44422850000001,41.3985639,0.0</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<styleUrl>#icon-503-8080FF</styleUrl>
+			<name>Fight Tactix</name>
+			<ExtendedData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-73.44422850000001,41.3985639,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Style id='icon-503-8080FF'>
+			<IconStyle>
+				<color>ffFF8080</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id='line-3838FF-1'>
+			<LineStyle>
+				<color>ffFF3838</color>
+				<width>1</width>
+			</LineStyle>
+		</Style>
+	</Document>
+</kml>
