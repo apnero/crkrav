@@ -6,7 +6,7 @@
     <Style id="S2">
       <LineStyle>
         <color>C800FF00</color>
-        <width>4</width>
+        <width>6</width>
       </LineStyle>
       <PolyStyle>
         <color>64008000</color>
