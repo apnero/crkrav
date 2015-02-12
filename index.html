@@ -515,11 +515,10 @@
    
     
     
-    <section id="mapsection" class="section starthidden hide gmap">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6" id="map"></div>
-                <div class="col-lg-6 col-md-6 col-sm-6" id="panorama"><div id="arrow" style="z-index:100;position:absolute; left:100px;bottom:120px;opacity:.7;"><img class="img-responsive" src="assets/img/arrow.gif"></div></div>
-         </div>
+    <section id="mapsection" class="section starthidden hide">
+     
+                <div id="map-canvas"></div>
+ 
 
     </section><!-- .section gmap -->
 
@@ -980,7 +979,7 @@
     <script src="assets/js/features/meet-the-team.js"></script>
     <script src="assets/js/features/funny-boxes.js"></script>
    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-      <script src="assets/js/gmaps.js"></script> 
+      <script src="assets/js/mymap.js"></script> 
     <script src="assets/js/jquery.flexslider.min.js"></script>
 <script src="assets/js/twitterFetcher_v10.min.js"></script>
     <script type="text/javascript" src="assets/plugins/wow.min.js"></script>
@@ -1041,88 +1040,8 @@
             $('.video').removeClass('hide');
             $('#topsection').height('auto');
 
-
-                    
-        /*
-        * Google Map
-        */
-                panorama = GMaps.createPanorama({
-          el: '#panorama',
-            lat: 41.399462,
-            lng: -73.443774,
-            pov: { heading: 143.47, pitch: 0, zoom: 1 },
-
-           pov_changed: function(e) {
-              $('#arrow').addClass('hide');
-         }
-           ,
-        });  
-
-
-
-
-
-
-map = new GMaps({
-            el: '#map',
-            scrollwheel: false,
-            disableDefaultUI: true,
-            zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.LARGE
-            },
-            lat: 41.399095,
-            lng: -73.44344,
-            styles: [
-                  {
-                    "elementType": "geometry",
-                    "stylers": [
-                      { "weight": 1.9 },
-                      { "saturation": -94 },
-                      { "gamma": 0.99 },
-                      { "lightness": -75 }
-                    ]
-                  },{
-                    "featureType": "road",
-                    "stylers": [
-                      { "gamma": 0.9 },
-                      { "color": "#8d4e9f" },
-                      { "saturation": -88 },
-                      { "lightness": -12 }
-                    ]
-                  },{
-                    "elementType": "labels.text",
-                    "stylers": [
-                      { "weight": 0.8 },
-                      { "saturation": 32 },
-                      { "lightness": 44 },
-                      { "gamma": 2.29 }
-                    ]
-                  },{
-                    "featureType": "road.highway",
-                    "stylers": [
-                      { "saturation": 27 },
-                      { "hue": "#3300ff" },
-                      { "gamma": 0.65 },
-                      { "lightness": -21 },
-                      { "weight": 1.7 }
-                    ]
-                  }
-                ]
-
-        });
-
-                map.addMarker({
-                    lat: 41.399095,
-                    lng: -73.44344,
-                    title: 'Fight Tactix',
-                    infoWindow: {
-                        content: '<p><strong>Fight Tactix</strong></p><p>190 White Street, Danbury, CT<\p>'
-                    }
-                });         
-
-                
-
+            initialize();
+  
 
             };       
         

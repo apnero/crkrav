@@ -12,9 +12,9 @@
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuB51RyCZlFf75dVvRSXElOudmAJ1bntY"></script>
-    <script>
+    <csript>
 function initialize() {
-  var chicago = new google.maps.LatLng(41.875696,-87.624207);
+  var chicago = new google.maps.LatLng(41.399095, -73.44344);//41.875696,-87.624207);
   var mapOptions = {
     zoom: 11,
     center: chicago
@@ -23,7 +23,7 @@ function initialize() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var ctaLayer = new google.maps.KmlLayer({
-    url: 'http://crkrav.herokuapp.com/cta.kml'
+    url: 'http://crkrav.herokuapp.com/bingroute.kml'
   });
   ctaLayer.setMap(map);
 }
