@@ -1007,6 +1007,71 @@ media screen and(min - width: 768 px) {.carousel - control.glyphicon - chevron -
         bottom: 20 px
     }
 
+}
 
 
+.schedulerow {
 
+    position: absolute;
+    top:0px;
+    width: inherit;
+
+}
+
+#monday:hover ~ .mon {
+    fill:#3D397C;
+}
+#tuesday:hover ~ .tue{
+    fill:#3D397C;
+}
+#wednesday:hover ~ .wed{
+    fill:#3D397C;
+}
+#thursday:hover ~ .thu{
+    fill:#3D397C;
+}
+#friday:hover ~ .fri{
+    fill:#3D397C;
+}
+#saturday:hover ~ .sat{
+    fill:#3D397C;
+}
+#nine:hover ~ .nine{
+    fill:#B64A31;
+}
+#ten:hover ~ .ten{
+    fill:#B64A31;
+}
+#elev:hover ~ .elev{
+    fill:#B64A31;
+}
+#five:hover ~ .five{
+    fill:#B64A31;
+}
+#six:hover ~ .six{
+    fill:#B64A31;
+}
+#sev:hover ~ .sev{
+    fill:#B64A31;
+}
+
+.pop{
+    position:absolute;
+    top:40%;
+    left:50%;
+}
+
+.popover  {
+background: #000000!important;
+}
+
+.popover.bottom .arrow{
+  color:#000000;
+}
+
+.popover-title {
+    background-color: #000000;
+}
+.popover.bottom .arrow:after {
+  border-bottom-color:#000000;
+}
