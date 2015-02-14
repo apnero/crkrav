@@ -180,7 +180,7 @@
                     <div class="col-md-6 col-xs-12 col-lg-6 col-sm-12">
                         <div class="who-we-are-text">
                            <!--  <h4>A Little About Our Past</h4> -->
-                            <p class="text-center" style="font-size:1vmax;"><b>Krav Maga</b> is Hebrew for "Contact Combat". This system uses practical applications which can be easily acquired regardless of size and strength and teaches each student not only to protect themselves against an attacker but to help them physically and mentally prepare for the unexpected. This style of training does not require a uniform; we train in casual gym clothes and sneakers. We do our best to replicate real-life scenarios and environments. Our training comes directly from Israel and we teach Krav Maga in the fighting system's most modern evolution. Krav Maga has been tested and proven to be the most effective defense system on the planet. Classes are conducted in a safe and comfortable environment for all fitness and skill levels.</p>
+                            <p class="text-center"><b>Krav Maga</b> is Hebrew for "Contact Combat". This system uses practical applications which can be easily acquired regardless of size and strength and teaches each student not only to protect themselves against an attacker but to help them physically and mentally prepare for the unexpected. This style of training does not require a uniform; we train in casual gym clothes and sneakers. We do our best to replicate real-life scenarios and environments. Our training comes directly from Israel and we teach Krav Maga in the fighting system's most modern evolution. Krav Maga has been tested and proven to be the most effective defense system on the planet. Classes are conducted in a safe and comfortable environment for all fitness and skill levels.</p>
                         </div>
                         <!-- //.who-we-are-text -->
                     </div>
@@ -773,7 +773,7 @@
                     <div class="col-md-12">
                         <div class="quote-text text-center">
                             <span class="quote-icon"><i class="fa fa-quote-right fa-4x"></i></span>
-                            <h2 style="font-size:2.75vw;">"If you always put limits on everything you do, physical or anything else, it will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them."</h2>
+                            <h2 style="font-size:2.85vw;">"If you always put limits on everything you do, physical or anything else, it will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them."</h2>
                             <h2 class="lead quote-by">(Bruce Lee)</h2>
                         </div>
                         <!-- //.quote-text -->
@@ -1297,6 +1297,7 @@
 <script src="assets/js/twitterFetcher_v10.min.js"></script>
     <script type="text/javascript" src="assets/plugins/wow.min.js"></script>
  <script src="assets/js/designr.js"></script>
+ <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript">
      var audio = $("#audio_player");
         audio[0].volume = .005;
@@ -1328,6 +1329,7 @@
 
     
             $('#entersign').hide();
+            $('.starthidden').removeClass('hide');  
             var myPlayer = videojs("video_1");
             /* var testimonialPlayer = videojs("video_2"); */
             var audio = $("#audio_player");
@@ -1349,15 +1351,17 @@
             
             /*testimonialPlayer.play();*/
 
-            $('.starthidden').removeClass('hide');
+
             $('.video').removeClass('hide');
             $('#topsection').height('auto');
 
             initialize();
-           
+
             $('#svgrow').height($('#schrow').height());
             $('#svgrow').width($('#schrow').width());
-            };       
+           
+
+        };       
         
        $('#enter').click(start);
        $('#cr_item').click(start);
@@ -1378,8 +1382,6 @@
 
             function A (){ window.setTimeout( B,5000);};
             function B (){ speed = -1*speed; obt1.play(speed-.1); A()};
-
-
 
 
   </script>
