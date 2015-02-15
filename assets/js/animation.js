@@ -1,5 +1,13 @@
 $(function(){
     
+        $('#svgrow').one('inview', function(isInView) {
+            if (isInView) {            
+                $('#svgrow').height($('#schrow').height());
+                $('#svgrow').width($('#schrow').width());
+            }
+        });
+
+
     // Only animate elements when using non-mobile devices    
     if (jQuery.browser.mobile === false) 
     {
@@ -57,6 +65,7 @@ $(function(){
         $('#rj-contact-us .social-icon-text').css('opacity', 0).one('inview', function(isInView) {
             if (isInView) {$(this).addClass('animated fadeInUp delayp3').css('opacity', 1);}
         });
+
      
         
         // Animate elements in Footer

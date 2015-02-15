@@ -374,7 +374,7 @@
 
 
 
-    <section id="rj-funny-boxes5" class="section starthidden hide" style="background-color:rgba(255, 255, 255, 0);">
+    <section id="schedulesection" class="section starthidden hide" style="background-color:rgba(255, 255, 255, 0);">
 
         <div id="schedule" class="section-inner">
             
@@ -1297,7 +1297,6 @@
 <script src="assets/js/twitterFetcher_v10.min.js"></script>
     <script type="text/javascript" src="assets/plugins/wow.min.js"></script>
  <script src="assets/js/designr.js"></script>
- <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script type="text/javascript">
      var audio = $("#audio_player");
         audio[0].volume = .005;
@@ -1329,7 +1328,8 @@
 
     
             $('#entersign').hide();
-            $('.starthidden').removeClass('hide');  
+            $('.starthidden').removeClass('hide');             
+            $('#topsection').height('auto'); 
             var myPlayer = videojs("video_1");
             /* var testimonialPlayer = videojs("video_2"); */
             var audio = $("#audio_player");
@@ -1353,12 +1353,12 @@
 
 
             $('.video').removeClass('hide');
-            $('#topsection').height('auto');
+
 
             initialize();
 
-            $('#svgrow').height($('#schrow').height());
-            $('#svgrow').width($('#schrow').width());
+            //$('#svgrow').height($('#schrow').height());
+            //$('#svgrow').width($('#schrow').width());
            
 
         };       
