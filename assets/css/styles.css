@@ -1092,7 +1092,7 @@ media screen and(min - width: 768 px) {.carousel - control.glyphicon - chevron -
 .pop{
     position:absolute;
     top:43%;
-    left:56%;
+    left:50%;
 }
 
 .popover  {
