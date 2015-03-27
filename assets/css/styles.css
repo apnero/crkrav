@@ -84,6 +84,26 @@ button.btn.btn-custom:hover {
 
 }
 
+.signupbutton {
+    position: absolute;
+    top:12%;
+    left:19%;
+    height:70%;
+
+    width: 40%;
+  
+
+}
+.freetrialbutton {
+    position: absolute;
+    top:12%;
+    right:-2%;
+    height:70%;
+
+    width: 40%;
+  
+
+}
 
 a.btn.btn-custom2,
 button.btn.btn-custom2 {
@@ -100,6 +120,45 @@ button.btn.btn-custom2 {
 
 a.btn.btn-custom2:hover,
 button.btn.btn-custom2:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+a.btn.btn-custom3,
+button.btn.btn-custom3 {
+    width:45%;
+    height:100%;
+    background-image: url("../img/signuptext.png");
+    background-color: rgba(255, 255, 255, 0.10);
+       background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    border-color: rgba(255, 255, 255, 0.10);
+    text-transform: uppercase;
+}
+
+a.btn.btn-custom3:hover,
+button.btn.btn-custom3:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+
+a.btn.btn-custom4,
+button.btn.btn-custom4 {
+    width:45%;
+    height:100%;
+    background-image: url("../img/freeclasstext.png");
+    background-color: rgba(255, 255, 255, 0.10);
+       background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    border-color: rgba(255, 255, 255, 0.10);
+    text-transform: uppercase;
+}
+
+a.btn.btn-custom4:hover,
+button.btn.btn-custom4:hover {
     color: #fff;
     background-color: rgba(255, 255, 255, 0.24);
 }
