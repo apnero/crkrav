@@ -1176,10 +1176,18 @@ background: #000000!important;
 .chrisquote  {
      visibility: hidden;
 }
+.main  {
+     visibility: hidden;
+}
 
 
 @media (min-width: 600px) {
     .chrisquote  {
         visibility: visible;
     }
+    .main  {
+        visibility: visible;
+    }
 }
+
+
